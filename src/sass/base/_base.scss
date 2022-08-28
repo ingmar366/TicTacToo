@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr;
+    max-height: 100vh;
+    align-items: center;
+    justify-items: center;
+    gap:5rem;
+    background-color: beige;
+    overflow: hidden;
+}
+
+.hidden{
+    display: none;
+}

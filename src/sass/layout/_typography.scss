@@ -1,0 +1,17 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-header {
+  font-size: 6.2rem;
+}
+
+.player {
+  font-size: 4.8rem;
+}
+
+.start,
+.tie,
+.restart {
+  @include modal-content-typo;
+}

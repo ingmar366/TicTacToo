@@ -1,0 +1,54 @@
+.main-header {
+  grid-column: 1/-1;
+  padding-top: 1rem;
+}
+
+.player {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.active {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 3px;
+    background-color: rgb(6, 211, 211);
+    left: -5%;
+    bottom: -10%;
+  }
+}
+
+// game
+
+.game {
+  grid-column: 1/-1;
+  width: 50vw;
+  height: 50vw;
+  max-width: 50rem;
+  max-height: 50rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding-bottom: 8rem;
+}
+
+.row-1,
+.row-2 {
+  border-bottom: 3px solid black;
+}
+
+.column-1,
+.column-2 {
+  border-right: 3px solid black;
+}
+
+.cell {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}

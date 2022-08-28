@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Too</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../src/sass/main.scss" />
+    <script type="module" defer src="./js/controller.js"></script>
+  </head>
+  <body>
+    <h1 class="main-header">Tic Tac Too</h1>
+
+    <div class="player">
+      <h2 class="player1 active">Player 1</h2>
+      <img class="circle svg" src="./images/circle.svg" alt="CIRCLE" />
+    </div>
+
+    <div class="player">
+      <h2 class="player2">Player 2</h2>
+      <img class="cross svg" src="./images/cross.svg" alt="CROSS" />
+    </div>
+
+    <div class="game">
+      <div class="cell row-1 column-1" data-set="1"></div>
+      <div class="cell row-1 column-2" data-set="2"></div>
+      <div class="cell row-1" data-set="3"></div>
+      <div class="cell row-2 column-1" data-set="4"></div>
+      <div class="cell row-2 column-2" data-set="5"></div>
+      <div class="cell row-2" data-set="6"></div>
+      <div class="cell row-3 column-1" data-set="7"></div>
+      <div class="cell row-3 column-2" data-set="8"></div>
+      <div class="cell row-3" data-set="9"></div>
+    </div>
+
+    <div class="modal">
+      <div class="start">
+        <h3>Welcome to the famous 'Tic Tac Too' game</h3>
+        <a class="button start__button" href="">Start</a>
+      </div>
+
+      <div class="tie hidden">
+        <h3>Its a Tie, better luck next time!</h3>
+        <a class="button restart__button" href="">Restart</a>
+      </div>
+
+      <div class="restart hidden">
+        <h3 class="restart__header"></h3>
+        <a class="button restart__button" href="">Restart</a>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>

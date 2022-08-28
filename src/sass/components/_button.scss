@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+}
+
+.button:visited,
+.button:link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 1rem 4rem;
+  background-color: $button-color;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: $button-color-dark;
+  color: aliceblue;
+  transform: translateY(-10%);
+}
+
+.button:active {
+  transform: translateY(2%);
+}
